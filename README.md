@@ -20,7 +20,7 @@
 </h2>
 
 <p align="center" >
-    <a href="https://heroku.com/deploy?template=https://github.com/Kai0071/A17">
+    <a href="https://heroku.com/deploy?template=https://github.com/2005-SACHITH-MAX/CYBER-PANDA-MD-V1">
     <img title="A17 on Heroku" src="https://www.herokucdn.com/deploy/button.png" width="189px" alt="Deploy on Heroku" >
     </a>
 </p>
