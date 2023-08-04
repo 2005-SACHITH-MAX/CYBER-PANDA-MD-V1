@@ -73,7 +73,7 @@ cmd({
         let textt = "*YouTube Search*\n\n Result From " + text + "\n\n───────────────────\n";
         let no = 1;
         for (let i of search.all) {
-            textt += `⚡ No : ${no++}\n ❤Title : ${i.title}\n♫ Type : ${
+            textt += `👋 No : ${no++}\n ❤Title : ${i.title}\n♫ Type : ${
       i.type
     }\n🙈Views : ${i.views}\n⌛Duration : ${
       i.timestamp
@@ -171,16 +171,16 @@ cmd({
                     url: anu.thumbnail,
                 },
                 caption: `
-╭───────────────◆
-│⿻ ${tlang().title} 
-│  *Youtube Player* ✨
+╭───────────────❊
+│⿻ ᴄʏʙᴇʀ-ᴘᴀɴᴅᴀ-ᴍᴅ
+│  *Youtube Player* 🎩
 │⿻ *Title:* ${anu.title}
 │⿻ *Duration:* ${anu.timestamp}
 │⿻ *Viewers:* ${anu.views}
 │⿻ *Uploaded:* ${anu.ago}
 │⿻ *Author:* ${anu.author.name}
-╰────────────────◆
-⦿ *Url* : ${anu.url}
+╰────────────────❊
+⦿ *Link* : ${anu.url}
 `,
                 footer: tlang().footer,
                 headerType: 4,

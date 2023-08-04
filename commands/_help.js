@@ -134,7 +134,7 @@ for (let i = 0; i < commands.length; i++)
         }
     )
     //---------------------------------------------------------------------------
-Secktor.cmd({
+    Secktor.cmd({
         pattern: "owner",
         desc: "To find owner number",
         category: "general",

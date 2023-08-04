@@ -114,14 +114,18 @@ cmd({
         filename: __filename,
     },
     async(Void, citel) => {
-        let { data } = await axios.get('https://api.github.com/repos/SamPandey001/Secktor-Md')
-        let cap = `Hey ${citel.pushName}\n
-*⭐ Total Stars:* ${data.stargazers_count} stars
-*🍽️ Forks:* ${data.forks_count} forks
-*🍁 Repo:* citel-x.herokuapp.com/repo
-*Group:* citel-x.herokuapp.com/support
+        let { data } = await axios.get('https://github.com/2005-SACHITH-MAX/CYBER-PANDA-MD-V1')
+        let cap = `
+▱▱▱▱▱▱▱▱
+Hi👋 ${citel.pushName}\n
+▱▱▱▱▱▱▱▱
+*🍁 Repo:* https://sampandey00011-af12d376b8d4.herokuapp.com/id
+▱▱▱▱▱▱▱▱
+*Group:* https://chat.whatsapp.com/IDdNyYAl7Yf5xRnFpRq0Wd
+▱▱▱▱▱▱▱▱
 *Deploy Your Own:*-
-citel-x.herokuapp.com`
++94767233346
+▱▱▱▱▱▱▱▱`
         let buttonMessaged = {
             image: { url: await botpic() },
             caption: cap,
@@ -157,13 +161,19 @@ cmd({
         timestampe = speed();
         latensie = speed() - timestampe;
         let ter = `
-🔰 *${tlang().title}* 🔰
-*🌟Description:* A WhatsApp bot with rich features, build in NodeJs to make your WhatsApp enjoyable.
+▱▱▱▱▱▱▱▱
+ *🎩ᴄʏʙᴇʀ-ᴘᴀɴᴅᴀ-ᴍᴅ🎩* 
+ ▱▱▱▱▱▱▱▱
 *⚡Speed:* ${latensie.toFixed(4)} ms
+▱▱▱▱▱▱▱▱
 *🚦Uptime:* ${runtime(process.uptime())}
-*🕸Version:* 0.0.7
+▱▱▱▱▱▱▱▱
+*🕸Version:* 0.1
+▱▱▱▱▱▱▱▱
 *👤Owner:*  ${Config.ownername}
+▱▱▱▱▱▱▱▱
 *Powered by ${tlang().title}*
+▱▱▱▱▱▱▱▱
 `;
         let buttonMessaged = {
             image: {
