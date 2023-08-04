@@ -12,8 +12,8 @@ global.location = 'Sultanpur IN'
 global.gurl = 'https://instagram.com/' // add your username
 global.sudo = process.env.SUDO || '+94715574230'
 global.devs = '+94715574230';
-global.website = 'https://github.com/SamPandey001/Secktor-Md' //wa.me/+91000000000000
-global.THUMB_IMAGE = process.env.THUMB_IMAGE || 'https://raw.githubusercontent.com/SecktorBot/Brandimages/main/logos/SocialLogo%201.png'
+global.website = 'https://github.com/2005-SACHITH-MAX/CYBER-PANDA-MD-V1' //wa.me/+91000000000000
+global.THUMB_IMAGE = process.env.THUMB_IMAGE || 'https://telegra.ph/file/6032c257abee792a75480.jpg'
 module.exports = {
   botname:   process.env.BOT_NAME === undefined ? '𝐒𝐞𝐜𝐤𝐭𝐨𝐫 𝐁𝐨𝐭𝐭𝐨' : process.env.BOT_NAME,
   ownername: process.env.OWNER_NAME === undefined ? 'SamPandey001' : process.env.OWNER_NAME,
