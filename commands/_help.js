@@ -1,3 +1,14 @@
+/**
+ Copyright (C) 2022.
+ Licensed under the  GPL-3.0 License;
+ You may not use this file except in compliance with the License.
+ It is supplied in the hope that it may be useful.
+ * @project_name : Secktor-Md
+ * @author : SamPandey001 <https://github.com/SamPandey001>
+ * @description : Secktor,A Multi-functional whatsapp bot.
+ * @version 0.0.6
+ **/
+
 const os = require('os')
 const moment = require("moment-timezone")
 const fs = require("fs")
@@ -13,7 +24,7 @@ Secktor.cmd({
             alias: ["menu"],
             desc: "Help list",
             category: "general",
-            react: "❤",
+            react: "✨",
             filename: __filename
         },
         async(Void, citel, text) => {
@@ -42,34 +53,36 @@ Secktor.cmd({
                     .locale('id')
                 const date = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
                 let total = await sck1.countDocuments()
-                let str = `╭────❮ ` + fancytext(Config.ownername.split(' ')[0], 58) + ` ❯─────⊷\n`
+                let str = `╭────❮ ` + fancytext(Config.ownername.split(' ')[0], 58) + ` ❯─────❊\n`
                 str +=
-                    '```' + `┌──•✧❊❊❊✧•── ─┐
-*┃ᴄʏʙᴇʀ ᴘᴀɴᴅᴀ ᴍᴅ*
-└─── •✧✧• ────┘
-
-┌─•✧𝑰𝑵𝑭𝑶 𝑼𝑺𝑬𝑹✧•─┐
-┊ 👨‍💻  *𝑼𝑺𝑬𝑹:* ${taguser}
-┊ 👨‍💻  *𝙉𝘼𝙈𝙀:* ${name}
-┊ 😈  𝙊𝙒𝙉𝙀𝙍 𝙉𝘼𝙈𝙀 :${author}
-┊ 💎  *𝘿𝙄𝘼𝙈𝙊𝙉𝘿𝙎:* ${diamond}
-┊ 📱  *𝙍𝘼𝙉𝙆:* ${role}
-┊ 🃏  *𝙀𝙓𝙋𝙀𝙍𝙄𝙀𝙉𝘾𝙀:* ${exp}
-└─── •✧✧• ────┘
-
-┌──•✧𝑻𝒐𝒅𝒂𝒚✧•─────┐
-┊ 📅   *𝘿𝘼𝙏𝙀:* ${date}
-┊ ⏲️   *𝙏𝙄𝙈𝙀:* ${wib}
-└── •✧✧• ───────┘ 
-
-≻───── ⋆✩⋆ ─────≺
-✎𝙐𝙎𝙀 list 𝑻𝑶 𝑺𝑬𝑬 𝑨𝑳𝑳 𝑼𝑺𝑨𝑩𝑳𝑬 𝑪𝑶𝑴𝑴𝑨𝑵𝑫𝑺
-≻───── ⋆✩⋆ ─────≺
+                    '```' + `│ ╭──────────────❊
+│ │ User:- ${citel.pushName}
+│ │▱▱▱▱▱▱▱▱
+│ │ Theme:- ${tlang().title}
+│ │▱▱▱▱▱▱▱▱
+│ │ Prefix:- [ ${prefix} ]
+│ │▱▱▱▱▱▱▱▱
+│ │ Owner:- ${Config.ownername}
+│ │▱▱▱▱▱▱▱▱
+│ │ Plugins:- ${commands.length}
+│ │▱▱▱▱▱▱▱▱
+│ │ Users:- ${total}
+│ │▱▱▱▱▱▱▱▱
+│ │ Uptime:- ${runtime(process.uptime())}
+│ │▱▱▱▱▱▱▱▱
+│ │ Mem:- ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
+│ │▱▱▱▱▱▱▱▱
+│ │ Time:- ${time}
+│ │▱▱▱▱▱▱▱▱
+│ │ Date:- ${date}
+│ │▱▱▱▱▱▱▱▱
+│ ╰──────────────❊
+╰───────────────❊\n
 ` + '```'
                 for (const category in cmds) 
                 {
-                   str += `╭────❊ *${tiny(category)}* ❊\n` ;
-                   if(text.toLowerCase() == category.toLowerCase()){ str = `╭─────❊ *${tiny(category)}* ❊\n` ;      
+                   str += `╭────🎩 *${tiny(category)}* 🎩\n` ;
+                   if(text.toLowerCase() == category.toLowerCase()){ str = `╭─────🎩 *${tiny(category)}* 🎩🎩\n` ;      
                         for (const plugins of cmds[category]) { str += `│ ${fancytext(plugins,1)}\n` ; }
                         str += `╰━━━━━━━━━━━━━──❊\n`  ;
                         break ;
@@ -79,7 +92,7 @@ Secktor.cmd({
                    }
   
                 }
-                str+= `*⭐️Type:* _${prefix}help cmd_ name to know more about specific command.\n*Eg:* _${prefix}help attp_\n*Made with ❤️ in Nodejs* `
+                str+= `*👋Type:* _${prefix}help cmd_ name to know more about specific command.\n*Eg:* _${prefix}help attp_\n*🎩ᴄʏʙᴇʀ-ᴘᴀɴᴅᴀ-ᴍᴅ🎩`
                 let buttonMessaged = {
                     image: { url: await botpic() },
                     caption: str
@@ -97,19 +110,19 @@ Secktor.cmd({
         async(Void, citel) => {
             const { commands } = require('../lib');
             let str = `
-╭━━〘 ` + fancytext(Config.ownername.split(' ')[0], 58) + ` 〙━━──⊷`
+╭━━❮ ` + fancytext(Config.ownername.split(' ')[0], 58) + ` ❯━━──❊`
             str += `
-┃ ⛥╭──────────────      
-┃ ⛥│ User: ${citel.pushName}
-┃ ⛥│ Theme: ${tlang().title}
-┃ ⛥│ Prefix: ${prefix}
-┃ ⛥│ Owner: ${Config.ownername}
-┃ ⛥│ Commands: ${commands.length}
-┃ ⛥│ Uptime: ${runtime(process.uptime())}
-┃ ⛥│ Mem: ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
-┃ ⛥│  
-┃ ⛥╰───────────
-╰━━━━━━━━━━━──⊷\n`
+┃ ❊╭──────────────      
+┃ ❊│ User: ${citel.pushName}
+┃ ❊│ Theme: ${tlang().title}
+┃ ❊│ Prefix: ${prefix}
+┃ ❊│ Owner: ${Config.ownername}
+┃ ❊│ Commands: ${commands.length}
+┃ ❊│ Uptime: ${runtime(process.uptime())}
+┃ ❊│ Mem: ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
+┃ ❊│  
+┃ ❊╰───────────
+╰━━━━━━━━━━━──❊\n`
 for (let i = 0; i < commands.length; i++) 
 {
      if(commands[i].pattern==undefined) continue
