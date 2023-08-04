@@ -1,5 +1,5 @@
 FROM quay.io/sampandey001/secktor
-RUN git clone https://github.com/2005-SACHITH-MAX/CYBER-PANDA-MD-V1 /root/SamPandey001
+RUN git clone https://github.com/2005-SACHITH-MAX/CYBER-PANDA-MD-V1 /root/2005-SACHITH-MAX
 WORKDIR /root/SamPandey001/
 RUN npm install npm@latest
 RUN yarn install --network-concurrency 1
