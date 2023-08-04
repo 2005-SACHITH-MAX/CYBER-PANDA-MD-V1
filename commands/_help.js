@@ -13,7 +13,7 @@ Secktor.cmd({
             alias: ["menu"],
             desc: "Help list",
             category: "general",
-            react: "✨",
+            react: "❤",
             filename: __filename
         },
         async(Void, citel, text) => {
@@ -42,32 +42,40 @@ Secktor.cmd({
                     .locale('id')
                 const date = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
                 let total = await sck1.countDocuments()
-                let str = `╭────《 ` + fancytext(Config.ownername.split(' ')[0], 58) + ` 》─────⊷\n`
+                let str = `╭────❮ ` + fancytext(Config.ownername.split(' ')[0], 58) + ` ❯─────⊷\n`
                 str +=
-                    '```' + `│ ╭──────────────❊
-│ │ User:- ${citel.pushName}
-│ │ Theme:- ${tlang().title}
-│ │ Prefix:- [ ${prefix} ]
-│ │ Owner:- ${Config.ownername}
-│ │ Plugins:- ${commands.length}
-│ │ Users:- ${total}
-│ │ Uptime:- ${runtime(process.uptime())}
-│ │ Mem:- ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
-│ │ Time:- ${time}
-│ │ Date:- ${date}
-│ ╰──────────────❊
-╰───────────────⊷\n
+                    '```' + `┌──•✧❊❊❊✧•── ─┐
+*┃ᴄʏʙᴇʀ ᴘᴀɴᴅᴀ ᴍᴅ*
+└─── •✧✧• ────┘
+
+┌─•✧𝑰𝑵𝑭𝑶 𝑼𝑺𝑬𝑹✧•─┐
+┊ 👨‍💻  *𝑼𝑺𝑬𝑹:* ${taguser}
+┊ 👨‍💻  *𝙉𝘼𝙈𝙀:* ${name}
+┊ 😈  𝙊𝙒𝙉𝙀𝙍 𝙉𝘼𝙈𝙀 :${author}
+┊ 💎  *𝘿𝙄𝘼𝙈𝙊𝙉𝘿𝙎:* ${diamond}
+┊ 📱  *𝙍𝘼𝙉𝙆:* ${role}
+┊ 🃏  *𝙀𝙓𝙋𝙀𝙍𝙄𝙀𝙉𝘾𝙀:* ${exp}
+└─── •✧✧• ────┘
+
+┌──•✧𝑻𝒐𝒅𝒂𝒚✧•─────┐
+┊ 📅   *𝘿𝘼𝙏𝙀:* ${date}
+┊ ⏲️   *𝙏𝙄𝙈𝙀:* ${wib}
+└── •✧✧• ───────┘ 
+
+≻───── ⋆✩⋆ ─────≺
+✎𝙐𝙎𝙀 list 𝑻𝑶 𝑺𝑬𝑬 𝑨𝑳𝑳 𝑼𝑺𝑨𝑩𝑳𝑬 𝑪𝑶𝑴𝑴𝑨𝑵𝑫𝑺
+≻───── ⋆✩⋆ ─────≺
 ` + '```'
                 for (const category in cmds) 
                 {
                    str += `╭────❊ *${tiny(category)}* ❊\n` ;
                    if(text.toLowerCase() == category.toLowerCase()){ str = `╭─────❊ *${tiny(category)}* ❊\n` ;      
                         for (const plugins of cmds[category]) { str += `│ ${fancytext(plugins,1)}\n` ; }
-                        str += `╰━━━━━━━━━━━━━──⊷\n`  ;
+                        str += `╰━━━━━━━━━━━━━──❊\n`  ;
                         break ;
                    }
                    else { for (const plugins of cmds[category]) { str += `│ ${fancytext(plugins,1)}\n` ; }
-                         str += `╰━━━━━━━━━━━━━━──⊷\n`  ; 
+                         str += `╰━━━━━━━━━━━━━━──❊\n`  ; 
                    }
   
                 }
