@@ -16,12 +16,17 @@
 
 
 
-```
+
+
+
 
 https://github.com/SamPandey001/Secktor-Md/wiki/Mongodb-URI) | [Tutorial](https://www.youtube.com/watch?v=WWrpBCBlyuo
 
 
-´´´
+## මෙක කොපි  කර ගන්න 👆
+
+
+
 
 
 
