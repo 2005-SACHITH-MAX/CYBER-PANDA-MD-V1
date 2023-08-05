@@ -1,7 +1,7 @@
-  <p align="center">  
+   <p align="center">  
   <a href="https://secktoruserbot.onrender.com/">
     <img alt="secktor docs" height="300" src="https://telegra.ph/file/6032c257abee792a75480.jpg">
-    <h1 align="center">CYBER-PANDA-MD-V1-WATSAPP-BO</h1>
+    <h1 align="center">CYBER-PANDA-MD-V1-WATSAPP-BOT</h1>
   </a>
 </p>
    
