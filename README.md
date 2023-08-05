@@ -11,30 +11,11 @@
 
  ***Get [QR-CODE-LINK](https://sampandey00011-af12d376b8d4.herokuapp.com/id) by scanning QR code.
 
-👋     *`🎩 HOW TO QR CODE LINK`*
+👋     *` HOW TO QR CODE LINK`*
 
 
 
+[🎩  Deploy On Heroku  🎩](https://heroku.com/deploy?template=https://github.com/2005-SACHITH-MAX/CYBER-PANDA-MD-V1)
 
 
-
-
-
-
-
-## 2.
-
-
-<h2 align="center"> 🎩  Deploy On Heroku  🎩
-</h2>
-
-<p align="center" >
-    <a href="https://heroku.com/deploy?template=https://github.com/2005-SACHITH-MAX/CYBER-PANDA-MD-V1">
-    <img title="A17 on Heroku" src="https://www.herokucdn.com/deploy/button.png" width="189px" alt="DEOLOY-ON-HREOKU-BOT" >
-    </a>
-</p>
-
-
-
-
-[QR-CODE-LINK](https://heroku.com/deploy?template=https://github.com/2005-SACHITH-MAX/CYBER-PANDA-MD-V1) by scanning QR code.
+👋 *` 🎩  Deploy On Heroku  🎩`*
