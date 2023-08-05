@@ -14,9 +14,12 @@
 
 
 
-## 🎩 HOW TO QR CODE LINK
 ---
-1. ***Get [SESSION-ID](https://sampandey00011-af12d376b8d4.herokuapp.com/id) by scanning QR code. `Whatapp>Three dots>Linked Devices`**
+## 1.
+
+ ***Get [SESSION-ID](https://sampandey00011-af12d376b8d4.herokuapp.com/id) by scanning QR code.
+
+👋     *`🎩 HOW TO QR CODE LINK`*
 
 
 
@@ -27,7 +30,7 @@
 
 
 
-
+## 2.
 
 
 <h2 align="center"> 🎩  Deploy On Heroku  🎩
