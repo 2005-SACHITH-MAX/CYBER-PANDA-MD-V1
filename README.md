@@ -7,17 +7,9 @@
    
 
 
- 
-- Install [External Plugins](https://github.com/SamPandey001/Secktor-Plugins)
-
-
-
-
-
----
 ## 1.
 
- ***Get [SESSION-ID](https://sampandey00011-af12d376b8d4.herokuapp.com/id) by scanning QR code.
+ ***Get [QR-CODE-LINK](https://sampandey00011-af12d376b8d4.herokuapp.com/id) by scanning QR code.
 
 👋     *`🎩 HOW TO QR CODE LINK`*
 
@@ -41,3 +33,8 @@
     <img title="A17 on Heroku" src="https://www.herokucdn.com/deploy/button.png" width="189px" alt="DEOLOY-ON-HREOKU-BOT" >
     </a>
 </p>
+
+
+
+
+[QR-CODE-LINK](https://heroku.com/deploy?template=https://github.com/2005-SACHITH-MAX/CYBER-PANDA-MD-V1) by scanning QR code.
