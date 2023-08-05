@@ -11,9 +11,19 @@
 - Install [External Plugins](https://github.com/SamPandey001/Secktor-Plugins)
 ## Deployment Methods
 ---
-1. ***Get [SESSION-ID](https://sampandey00011-af12d376b8d4.herokuapp.com/id) by scanning QR code. `Whatapp>Three dots>Linked Devices`***
-2.  ***Get a Mongodb uri from [Mongodb](https://github.com/SamPandey001/Secktor-Md/wiki/Mongodb-URI) | [Tutorial](https://www.youtube.com/watch?v=WWrpBCBlyuo).***
-). 
+1. ***Get [SESSION-ID](https://sampandey00011-af12d376b8d4.herokuapp.com/id) by scanning QR code. `Whatapp>Three dots>Linked Devices`**
+
+
+
+
+```
+
+https://github.com/SamPandey001/Secktor-Md/wiki/Mongodb-URI) | [Tutorial](https://www.youtube.com/watch?v=WWrpBCBlyuo
+
+
+´´´
+
+
 
 
 <h2 align="center"> ❤  Deploy On Heroku  ❤
