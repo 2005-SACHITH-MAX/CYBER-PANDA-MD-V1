@@ -9,7 +9,7 @@
 
 ## 1.
 
- ***Get [QR-CODE-LINK](https://sampandey00011-af12d376b8d4.herokuapp.com/id) by scanning QR code.
+ [🌐QR-CODE-LINK🌐](https://sampandey00011-af12d376b8d4.herokuapp.com/id) by scanning QR code.
 
 👋     *` HOW TO QR CODE LINK`*
 
