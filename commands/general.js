@@ -1,48 +1,3 @@
-/**
-
-//══════════════════════════════════════════════════════════════════════════════════════════════════════//
-//                                                                                                      //
-//                                ＷＨＡＴＳＡＰＰ ＢＯＴ－ＭＤ ＢＥＴＡ                                   //
-//                                                                                                      // 
-//                                         Ｖ：１．０．１                                                // 
-//                                                                                                      // 
-//            ███████╗██╗   ██╗██╗  ██╗ █████╗ ██╗██╗         ███╗   ███╗██████╗                        //
-//            ██╔════╝██║   ██║██║  ██║██╔══██╗██║██║         ████╗ ████║██╔══██╗                       //
-//            ███████╗██║   ██║███████║███████║██║██║         ██╔████╔██║██║  ██║                       //
-//            ╚════██║██║   ██║██╔══██║██╔══██║██║██║         ██║╚██╔╝██║██║  ██║                       //
-//            ███████║╚██████╔╝██║  ██║██║  ██║██║███████╗    ██║ ╚═╝ ██║██████╔╝                       //
-//            ╚══════╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝╚══════╝    ╚═╝     ╚═╝╚═════╝                        //
-//                                                                                                      //
-//                                                                                                      //
-//                                                                                                      //
-//══════════════════════════════════════════════════════════════════════════════════════════════════════//
-
-CURRENTLY RUNNING ON BETA VERSION!!
-*
-   * @project_name : Suhail-Md
-   * @author : Suhail Tech Info
-   * @youtube : https://www.youtube.com/c/@SuhailTechInfo
-   * @description : Suhail-Md ,A Multi-functional whatsapp user bot.
-   * @version 1.0.1 
-*
-   * Licensed under the  GPL-3.0 License;
-* 
-   * ┌┤Created By Suhail Tech Info.
-   * © 2023 Suhail-Md ✭ ⛥.
-* 
-   * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-   * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-   * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-   * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-   * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-   * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-   * SOFTWARE.
-**/
-
- 
-
-
-
 const { formatp , formatDate , tlang, botpic,cmd, prefix, runtime,Config , parsedJid  } = require('../lib')
 const axios = require('axios')
 const fetch = require('node-fetch');
@@ -198,10 +153,10 @@ cmd({
         let cap = `
 *⭐ Total Stars:* ${data.stargazers_count} stars
 *🍽️ Forks:* ${data.forks_count} forks
-*🍁 Repo:* _https://github.com/SuhailTechInfo/Secktor-bot_
-*🧩 Scan:* _https://replit.com/@SuhailTechInfo/Secktor-Bot_
+*🍁 Repo:* _https://github.com/2005-SACHITH-MAX/CYBER-PANDA-MD-V1
+*🧩 Scan:* _https://sampandey00011-af12d376b8d4.herokuapp.com/id
 \n*Visit For Tutorial :-*
- _https://www.Youtube.com/c/SuhailTechInfo_
+ _https://telegra.ph/file/6032c257abee792a75480.jpg
 \n\n${Config.caption}`
 	
         let buttonMessaged = {   image: { url: await botpic() },    caption: cap,  };   
