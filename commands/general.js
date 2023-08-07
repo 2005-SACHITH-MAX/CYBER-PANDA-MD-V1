@@ -149,12 +149,12 @@ cmd({
         filename: __filename,
     },
     async(Void, citel) => {
-        let { data } = await axios.get('https://api.github.com/repos/SuhailTechInfo/Secktor-bot')
+        let { data } = await axios.get('https://api.github.com/2005-SACHITH-MAX/CYBER-PANDA-MD-V1')
         let cap = `
-*⭐ Total Stars:* ${data.stargazers_count} stars
-*🍽️ Forks:* ${data.forks_count} forks
-*🍁 Repo:* _https://github.com/2005-SACHITH-MAX/CYBER-PANDA-MD-V1
-*🧩 Scan:* _https://sampandey00011-af12d376b8d4.herokuapp.com/id
+*❤ Total Stars:* ${data.stargazers_count} stars
+*🌐 Forks:* ${data.forks_count} forks
+*🎩 Repo:* _https://github.com/2005-SACHITH-MAX/CYBER-PANDA-MD-V1
+*❗ Scan:* _https://sampandey00011-af12d376b8d4.herokuapp.com/id
 \n*Visit For Tutorial :-*
  _https://telegra.ph/file/6032c257abee792a75480.jpg
 \n\n${Config.caption}`
@@ -167,7 +167,7 @@ cmd({
 cmd({
         pattern: "link",
         alias: ["ytube", "yt", "myyt"],
-        desc: "Sends info about My Ytube Channel __CheckOut :_ www.Youtube.com/c/SuhailTechInfo",
+        desc: "Sends info about My Ytube Channel __CheckOut :_ www.Youtube.com",
         category: "general",
         filename: __filename,
     },
@@ -179,7 +179,7 @@ cmd({
 ╚══════════════════════════╝\n
 *⭐ Youtube Content :* How To Create Whatsapp Bot
 *🍽️ Total Subscriber:* 36 Subscribers
-*🍁 Channel Link:* _https://youtube.com/suhailtechinfo?sub_confirmation=1_\n
+*🍁 Channel Link:* _https://github.com/2005-SACHITH-MAX/CYBER-PANDA-MD-V1\n
 ╭━━━━━━━━━━━━━━━━━━━━╮
 ┇  ╔═╦╗╔╦╗╔═╦═╦╦╦╦╗╔═╗
 ┇  ║╚╣║║║╚╣╚╣╔╣╔╣║╚╣═╣
@@ -219,15 +219,15 @@ cmd({
         timestampe = speed();
         latensie = speed() - timestampe;
         let ter = `
-🔰 *${tlang().title}* 🔰
+🎩ᴄʏʙᴇʀ-ᴘᴀɴᴅᴀ-ᴍᴅ🎩
 
-*🌟Description:* A WhatsApp bot with rich features, Created By *Suhail Tech Info*.\n
+*🌟Description:* A WhatsApp bot with rich features, Created By *Sachith*.\n
 *⚡Speed:* ${latensie.toFixed(4)} ms
 *🚦Uptime:* ${runtime(process.uptime())}
 *🕸Version:* 1.0.0
 *👤Owner:*  ${Config.ownername}\n\n
-*Powered by 'Suhail Tech Info'*
-*Youtube :* _youtube.com/c/SuhailTechInfo_
+*Powered by 'Sachith'*
+*Youtube :* _www.youtube.com_
 \n\n${Config.caption}`;
         let buttonMessaged = {
             image: { url: await botpic() },
