@@ -247,13 +247,13 @@ cmd({
             const alivtxt = `
 *Hello, ${citel.pushName},*
 
-*Version:-* _0.0.7_
+*Version:-* _0.0.1_
 
 *Uptime:-* _${runtime(process.uptime())}_
 
-*Owner:-* _${Config.ownername}_
+*Owner:-* _SACHITH_
 
-_Powered by ${Config.ownername}_
+_Powered by Cyber-x-Sachiya_
 
 ▬▬▬▬▬▬▬▬▬▬▬▬
        ❤‿ʜᴇʟʟᴏᴡ‿❤
