@@ -36,7 +36,7 @@ cmd({
             desc: "text to speech.",
             category: "downloader",
             filename: __filename,
-            use: '<Hii,this is Secktor>',
+            use: '<Hii,this is cyber Panda>',
         },
         async(Void, citel, text) => {
             if (!text) return citel.reply('Please give me Sentence to change into audio.')
@@ -70,7 +70,7 @@ cmd({
         let yts = require("secktor-pack");
         if (!text) return citel.reply(`Example : ${prefix}yts ${tlang().title} WhatsApp Bot`);
         let search = await yts(text);
-        let textt = "*YouTube Search*\n\n Result From " + text + "\n\n───────────────────\n";
+        let textt = "*YouTube තුල සොයමින් ඇත.*\n\n Result From " + text + "\n\n───────────────────\n";
         let no = 1;
         for (let i of search.all) {
             textt += `⚡ No : ${no++}\n ❤Title : ${i.title}\n♫ Type : ${
@@ -111,7 +111,7 @@ cmd({
                 if (infoYt.videoDetails.lengthSeconds >= videotime) return citel.reply(`❌ Video file too big!`);
                 let titleYt = infoYt.videoDetails.title;
                 let randomName = getRandom(".mp4");
-                citel.reply('*Downloadig:* '+titleYt)
+                citel.reply('*ඔබ ඉල්ලු විඩියොව ඩවුන්ලොඩ් කරමින් ඇත.:* '+titleYt)
                 const stream = ytdl(urlYt, {
                         filter: (info) => info.itag == 22 || info.itag == 18,
                     })
@@ -129,7 +129,7 @@ cmd({
                         jpegThumbnail: log0,
                         mimetype: 'video/mp4',
                         fileName: `${titleYt}.mp4`,
-                        caption: ` ⿻ Title : ${titleYt}\n ⿻ File Size : ${fileSizeInMegabytes} MB`,
+                        caption: ` 🎩 Title : ${titleYt}\n 🎩 File Size : ${fileSizeInMegabytes} MB`,
                         headerType: 4,
                         contextInfo: {
                             externalAdReply: {
@@ -173,7 +173,9 @@ cmd({
                 caption: `
 ╭───────────────❊
 │⿻ 🎩ᴄʏʙᴇʀ-ᴘᴀɴᴅᴀ-ᴍᴅ🎩
-│  *Youtube Player* ✨
+│▬▬▬▬▬▬▬▬▬▬▬
+│  *Youtube Player* 
+│▬▬▬▬▬▬▬▬▬▬▬
 │⿻ *Title:* ${anu.title}
 │⿻ *Duration:* ${anu.timestamp}
 │⿻ *Viewers:* ${anu.views}
