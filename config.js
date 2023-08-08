@@ -2,25 +2,25 @@ const fs = require('fs-extra')
 if (fs.existsSync('config.env')) require('dotenv').config({ path: __dirname+'/config.env' })
 
 
-//═══════[❗ඔයාට අවෂය දෙවල් විතරක් චෙන්ජ් කරන්න❗]════════\\
+//═══════[Required Variables]════════\\
 global.owner = process.env.OWNER_NUMBER.split(",")
 global.mongodb = process.env.MONGODB_URI || "mongodb+srv://sam:sam@cluster0.u1smxsv.mongodb.net/?retryWrites=true&w=majority"
 global.port= process.env.PORT || 5000
 global.email = 'sam@secktor.live'
-global.github = 'https://github.com/2005-SACHITH-MAX/CYBER-PANDA-MD-V1'
-global.location = 'Sri Lanka'
+global.github = 'https://github.com/SamPandey001/Secktor-Md'
+global.location = 'Sultanpur IN'
 global.gurl = 'https://instagram.com/' // add your username
-global.sudo = process.env.SUDO || '+94776319150'
-global.devs = '+94776319150';
-global.website = 'https://github.com/2005-SACHITH-MAX/CYBER-PANDA-MD-V1' //wa.me/+91000000000000
-global.THUMB_IMAGE = process.env.THUMB_IMAGE || 'https://telegra.ph/file/6032c257abee792a75480.jpg'
+global.sudo = process.env.SUDO || '919628516236'
+global.devs = '919628516236';
+global.website = 'https://github.com/SamPandey001/Secktor-Md' //wa.me/+91000000000000
+global.THUMB_IMAGE = process.env.THUMB_IMAGE || 'https://raw.githubusercontent.com/SecktorBot/Brandimages/main/logos/SocialLogo%201.png'
 module.exports = {
-  botname:   process.env.BOT_NAME === undefined ? 'ᴄʏʙᴇʀ-ᴘᴀɴᴅᴀ-ᴍᴅ𝐨' : process.env.BOT_NAME,
-  ownername: process.env.OWNER_NAME === undefined ? 'ᴄʏʙᴇʀ-ᴘᴀɴᴅᴀ-ᴍᴅ' : process.env.OWNER_NAME,
+  botname:   process.env.BOT_NAME === undefined ? '𝐒𝐞𝐜𝐤𝐭𝐨𝐫 𝐁𝐨𝐭𝐭𝐨' : process.env.BOT_NAME,
+  ownername: process.env.OWNER_NAME === undefined ? 'SamPandey001' : process.env.OWNER_NAME,
   sessionName:  process.env.SESSION_ID === undefined ? false : process.env.SESSION_ID,
   author:  process.env.PACK_INFO.split(";")[0] === undefined ? 'SamPandey001' : process.env.PACK_INFO.split(";")[0],
   auto_read_status :  process.env.AUTO_READ_STATUS === undefined ? false : process.env.AUTO_READ_STATUS,
-  packname:  process.env.PACK_INFO.split(";")[1] === undefined ? 'ᴄʏʙᴇʀ-ᴘᴀɴᴅᴀ-ᴍᴅ' : process.env.PACK_INFO.split(";")[1],
+  packname:  process.env.PACK_INFO.split(";")[1] === undefined ? 'Secktor-Md' : process.env.PACK_INFO.split(";")[1],
   autoreaction:  process.env.AUTO_REACTION  === undefined ? false : process.env.AUTO_REACTION ,
   antibadword :  process.env.ANTI_BAD_WORD === undefined ? 'nbwoed' : process.env.ANTI_BAD_WORD,
   alwaysonline:  process.env.ALWAYS_ONLINE === undefined ? false : process.env.ALWAYS_ONLINE,
