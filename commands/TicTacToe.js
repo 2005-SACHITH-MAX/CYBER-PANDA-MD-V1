@@ -1,17 +1,48 @@
 /**
+ * 
+ * 
  Copyright (C) 2022.
  Licensed under the  GPL-3.0 License;
  You may not use this file except in compliance with the License.
  It is supplied in the hope that it may be useful.
  * @project_name : Secktor-Md
- * @author : @samapndey001 <https://github.com/SamPandey001>
- * @description : Secktor,A Multi-functional whatsapp bot.
+ * @author : SuhailTechInfo <https://youtube.com/SuhailTechInfo>
+ * @description : Secktor,A Multi-functional whatsapp bot Created by Suhail Tech.
  * @version 0.0.6
  **/
+
+
+
+
+
+
+
+
+
+
+
 
  const { cmd, parseJid,getAdmin,tlang } = require("../lib/");
  const eco = require('discord-mongoose-economy')
  const ty = eco.connect(mongodb);
+
+
+ cmd(
+  {
+    pattern: "dice",
+    desc: "Play TicTacToe",
+    filename: __filename,
+    category: "game",
+  },
+  async (Void,citel,text) => {
+    const randomNumber = Math.floor(Math.random() * 6);
+    const diceEmoji = ["⚀", "⚁", "⚂", "⚃", "⚄", "⚅"];
+    const reactEmoji = ["1️⃣", "2️⃣", "3️⃣", "4️⃣", "5️⃣", "6️⃣"];
+    let index  = Math.floor(Math.random() * diceEmoji.length)
+    let msg =  await Void.sendMessage(citel.chat, {    text: diceEmoji[index]});
+    return await Void.sendMessage(citel.chat, { react: { text: reactEmoji[index] , key: msg.key }}); 
+  })
+ 
 cmd(
   {
     pattern: "delttt",
@@ -35,10 +66,10 @@ cmd(
       ) {
         delete this.game
         return citel.reply(`_Successfully Deleted running TicTacToe game._`);
-        } else {
-              return citel.reply(`No TicTacToe game🎮 is running.`)
-                    
-        }
+        } else {  return citel.reply(`No TicTacToe game🎮 is running.`)}
+
+
+
   })
   
 cmd(
@@ -54,18 +85,8 @@ cmd(
     {
       let TicTacToe = require("../lib/ttt");
       this.game = this.game ? this.game : {};
-      if (
-        Object.values(this.game).find(
-          (room) =>
-            room.id.startsWith("tictactoe") &&
-            [room.game.playerX, room.game.playerO].includes(citel.sender)
-        )
-      )
-        return citel.reply("_A game is already going on_");
-      let room = Object.values(this.game).find(
-        (room) =>
-          room.state === "WAITING" && (text ? room.name === text : true)
-      );
+      if ( Object.values(this.game).find( (room) => room.id.startsWith("tictactoe") && [room.game.playerX, room.game.playerO].includes(citel.sender))) return citel.reply("_A game is already going on_");
+      let room = Object.values(this.game).find((room) =>  room.state === "WAITING" && (text ? room.name === text : true)  );
       if (room) {
         room.o = citel.chat;
         room.game.playerO = citel.sender || citel.mentionedJid[0] 
@@ -93,10 +114,7 @@ ${arr.slice(3, 6).join("  ")}
 ${arr.slice(6).join("  ")}
 `;
 
-        return await Void.sendMessage(citel.chat, {
-          text: str,
-          mentions: [room.game.currentTurn],
-        });
+        return await Void.sendMessage(citel.chat, { text: str, mentions: [room.game.currentTurn], });
       } else {
         room = {
           id: "tictactoe-" + +new Date(),
@@ -113,10 +131,7 @@ ${arr.slice(6).join("  ")}
   }
 );
 
-cmd(
-  {
-    on: "text"
-  },
+cmd({ on: "text" },
   async (Void,citel,text) => {
     if(!citel.isGroup) return
     let {prefix} = require('../lib')
@@ -138,9 +153,7 @@ cmd(
       let isSurrender = !1;
       if (!/^([1-9]|(me)?give_up|surr?ender|off|skip)$/i.test(citel.text)) return;
       isSurrender = !/^[1-9]$/.test(citel.text);
-      if (citel.sender !== room.game.currentTurn) {
-        if (!isSurrender) return !0;
-      }
+      if (citel.sender !== room.game.currentTurn) {  if (!isSurrender) return !0;  }
       if (
         !isSurrender &&
         1 >
@@ -186,37 +199,18 @@ cmd(
 ${arr.slice(0, 3).join("  ")}
 ${arr.slice(3, 6).join("  ")}
 ${arr.slice(6).join("  ")}
-${
-  isWin
-    ? `@${winner.split("@")[0]} Won ! and got 2000💎 in wallet🤑`
-    : isTie
-    ? `Game Tied,well done to both of you players.`
-    : `Current Turn ${["❌", "⭕"][1 * room.game._currentTurn]} @${
-        room.game.currentTurn.split("@")[0]
-      }`
-}
+${ isWin ? `@${winner.split("@")[0]} Won ! and got 2000💎 in wallet🤑` : isTie ? `Game Tied,well done to both of you players.` : `Current Turn ${["❌", "⭕"][1 * room.game._currentTurn]} @${ room.game.currentTurn.split("@")[0]}`  }
 ⭕:- @${room.game.playerO.split("@")[0]}
 ❌:- @${room.game.playerX.split("@")[0]}`;
 
       if ((room.game._currentTurn ^ isSurrender ? room.x : room.o) !== citel.chat)
         room[room.game._currentTurn ^ isSurrender ? "x" : "o"] = citel.chat;
-        if(isWin){
-        await eco.give(citel.sender, "secktor", 2000);
-        }
-      if (isWin || isTie) {
-        await Void.sendMessage(citel.chat, {
-          text: str,
-          mentions: [room.game.playerO,room.game.playerX],
-        });
-      } else {
-        await Void.sendMessage(citel.chat, {
-          text: str,
-          mentions: [room.game.playerO,room.game.playerX],
-        });
-      }
-      if (isTie || isWin) {
+      if(isWin){  await eco.give(citel.sender, "Suhail", 2000);  }
+      if (isWin || isTie) { 
+        await Void.sendMessage(citel.chat, { text: str, mentions: [room.game.playerO,room.game.playerX], });
         delete this.game[room.id];
-      }
+      } 
+      else {  await Void.sendMessage(citel.chat, {  text: str,   mentions: [room.game.playerO,room.game.playerX], });  }
     }
   }
 );
