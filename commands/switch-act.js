@@ -1,20 +1,8 @@
-/**
- Copyright (C) 2022.
- Licensed under the  GPL-3.0 License;
- You may not use this file except in compliance with the License.
- It is supplied in the hope that it may be useful.
- * @project_name : Secktor-Md
- * @author : SamPandey001 <https://github.com/SamPandey001>
- * @description : Secktor,A Multi-functional whatsapp bot.
- * @version 0.0.6
- **/
-
 const { cmd,sck,sck1, getAdmin, tlang, prefix } = require('../lib')
 const Config = require('../config')
     //---------------------------------------------------------------------------
 cmd({
         pattern: "act",
-        alias:['activate','active'],
         desc: "Switches for varios works.",
         category: "group",
         filename: __filename,
@@ -24,13 +12,12 @@ cmd({
         if (!citel.isGroup) return citel.reply(tlang().group);
         const groupAdmins = await getAdmin(Void, citel)
         const botNumber = await Void.decodeJid(Void.user.id)
-       //const isBotAdmins = citel.isGroup ? groupAdmins.includes(botNumber) : false;
-        const isAdmins = citel.isGroup ? groupAdmins.includes(citel.sender) :false;
+        const isBotAdmins = citel.isGroup ? groupAdmins.includes(botNumber) : false;
+        const isAdmins = citel.isGroup ? groupAdmins.includes(citel.sender) : false;
         //-----------------------------------------
         if (!citel.isGroup) return citel.reply("This command is only for group")
-        if (!text) return citel.reply(`❌ Please provide me term like like\n1-events\n2-antilink\n3-nsfw\n4-bot`)
-        if (isCreator){console.log("this is a Bot Number in Act Functions")}
-        else if (!isAdmins) return citel.reply("❌ This command is only for admin")
+        if (!text) return citel.reply(`❌ Please provide me term like like\n1-events\n2-antilink\n3-nsfw\n4-cardgame\n5-bot`)
+        if (!isAdmins) return citel.reply("❌ This command is only for admin")
         switch (text.split(" ")[0]) {
             case 'antilink':
                 {
@@ -40,7 +27,7 @@ cmd({
                             .save()
                         return citel.reply(' Antilink Enabled Successfully')
                     } else {
-                        if (checkgroup.antilink == "true") return citel.reply("Antilink was alredy enabled here.")
+                        if (checkgroup.antilink == "true") return citel.reply("Antilink was alredy  enabled here.")
                         await sck.updateOne({ id: citel.chat }, { antilink: "true" })
                         citel.reply('Enabled antilink in current chat.')
                         return
@@ -112,4 +99,4 @@ cmd({
                 }
         }
     }
-) 
+)
